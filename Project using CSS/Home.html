@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .body{
+         background:linear-gradient(90deg,#b68e7a,#dc9f85,#ffdac0,#ddb188);
+        font-family: "Trebuchet MS", Verdana, sans-serif;
+        line-height: 5vh;
+        animation: gradientmove 6s infinite;
+        background-size: 400% 400%;
+
+    }
+    .welcome
+    {
+        font-size: 45px;
+        padding-top: 20px;
+       }
+      .Incredible{
+         animation-name: wel;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+      } 
+    .navbar
+    {
+        position: sticky;
+        top: 10px;
+        width: 70vw;
+        margin: 0 auto;
+        padding: 10px 12px;
+        background-color: rgba(126, 37, 26, 0.96);
+        border-radius: 14px;
+    }
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navbar li{
+        margin: 0;
+    }
+    .nav{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(255, 249, 243);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: 0.3cm;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .overview{
+        background-color:rgb(255, 249, 243);
+        border-radius: 0.5cm;
+        padding: 40px;
+        margin-right:5vw ;
+        margin-left: 5vw;
+        transition: transform 0.5s;
+    }
+    .img{
+        width: 100%;
+        height: auto;
+        border-radius: 0.5cm;
+    }
+    .insidebox{
+        background-color: rgb(241, 230, 230);
+        border-radius: 0.2cm;
+        padding: 12px;
+        transition: transform 0.5s;
+    }
+    .smallbox{
+        background-color: rgb(241, 230, 230);
+        border-radius: 0.2cm;
+        width: 40vw;
+        padding: 10px;
+        transition: transform 0.5s;
+    }
+    .imgstate{
+        width: 40vw; 
+        height: 50vh;
+        border-top-left-radius: 0.5cm;
+        border-top-right-radius: 0.5cm;
+        transition: transform 0.5s;
+    }
+    .statebutton{
+        width: 40vw;
+        height: 8vh;
+        border-bottom-left-radius: 0.5cm;
+        border-bottom-right-radius: 0.5cm;
+        font-size: 20px;
+        font-weight: bold;
+        border: thin black;
+    }
+    .imgstate:hover{
+        transform: scale(1.03);
+    }
+    .nav:hover{
+        background-color: rgb(241, 186, 92);
+        color:  rgb(93, 29, 21);
+    }
+    .statebutton:hover
+    {
+        background-color: rgb(226, 197, 168);
+    }
+    table{
+        width: 100%;
+    }
+    td{
+        padding: 6px 10px;
+    }
+    .insidebox:hover{
+        transform: scale(1.03);
+    }
+    .smallbox:hover{
+        transform: scale(1.05);
+    }
+    h2:hover{
+        color: brown;
+    }
+    @keyframes gradientmove {
+        0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+    }
+
+    @keyframes wel {
+        from{
+            background-color: rgb(241, 186, 92)
+        }
+        to{
+            background-color: indianred;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .Incredible{
+           line-height: 30px;
+        }
+        .button{
+            display: block;
+        }
+        div[style*="display: flex"]{
+            flex-direction: column;
+        }
+        .smallbox{
+            width: 100%;
+        }
+        .imgstate{
+            width: 100%;
+
+        }
+        .statebutton{
+            width: 100%;
+        }
+        .button{
+            width: 100%;
+        }
+        .onewhole{
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
+        }
+        .nav{
+            padding: 10px 10px;
+        }
+    }
+
+
+    @media (max-width: 634px) {
+        .Incredible{
+            line-height: 80px;
+        }
+        .button{
+            display: block;
+        }
+        div[style*="display: flex"]{
+            flex-direction: column;
+        }
+        .smallbox{
+            width: 100%;
+        }
+        .imgstate{
+            width: 100%;
+
+        }
+        .statebutton{
+            width: 100%;
+        }
+        .button{
+            width: 100%;
+        }
+        .onewhole{
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
+        }
+        .nav{
+            padding: 10px 8px;
+        }
+    }
+
+
+</style>
+<body class="body">
+    <h1 class="welcome" style="text-align: center;">Welcome to <mark class="Incredible" style="background-color: rgb(241, 186, 92) ;border-radius: 0.5cm;padding: 10px;">Incredible India</mark></h1>
+    <br>
+    
+        <nav class="navbar">
+            <ul>
+                <li><button class="button"><a class="nav" href="./Home.html">Home</a></button></li>
+                <li><button class="button"><a class="nav" href="./about.html">About</a></button></li>
+                <li><button class="button"><a class="nav" href="./Gallery.html">Gallery</a></button></li>
+                <li><button class="button"><a class="nav" href="./contact.html">Contact</a></button></li>
+            </ul>
+        </nav>
+
+    <br>
+    <br>
+    <div class="overview">
+    <div>
+        <h2 style="font-size: 30px;">Project Overview</h2>
+        <hr>
+        <br>
+    </div>
+       
+    <div>
+        <p>The<b> Incredible India</b> project highlights the rich culture, traditions, and diversity of India.
+    It showcases India’s festivals, food, dance, and heritage that reflect unity in diversity.
+    The project also focuses on India’s natural beauty and famous tourist attractions.
+    Through this website, users can learn about India’s cultural values and tourism importance in a simple and attractive way.</p>
+    
+    </div>
+
+    <div>
+            <img class="img" src="./img/india.webp">
+    </div>
+    
+    <div>
+        <p>India is a vast and diverse country located in South Asia.
+        <br>
+        <br>
+    It has a rich history that dates back thousands of years and is home to one of the world’s oldest civilizations.
+    India is known for its unity in diversity, where people of many cultures, languages, and religions live together peacefully.
+    The country celebrates numerous colorful festivals throughout the year, reflecting joy, tradition, and togetherness.
+    Indian food, music, and dance are famous all over the world for their variety and uniqueness.
+    <br>
+    <br>
+    India is the world’s largest democracy and follows democratic values and the rule of law.
+    The country has diverse landscapes including mountains, rivers, deserts, forests, and beaches.
+    India has made great progress in fields like science, education, technology, and space research.
+    Family values, respect for elders, and hospitality are important parts of Indian society.
+    Overall, India is a land of rich culture, strong traditions, and a bright future.</p>
+    </div>
+    
+    </div>
+    <br>
+    <div class="overview">
+
+        <div>
+            <h2 style="font-size: 30px;">Country Info</h2>
+        </div>
+        <hr>
+        <br>
+        
+        <div class="insidebox">
+            <table>
+            <tr><td>Currency:Indian rupee (Rs.)</td></tr>
+            <tr><td>Population:1.252 billion</td></tr>
+            <tr> <td>Time Zone:UTC+05:30</td></tr>
+            <tr><td>Area:3.287 million km2</td></tr>
+            <tr><td>Capital:New Delhi</td></tr>
+            <tr><td>Official Language:Hindi, English</td></tr>
+            <tr><td>Capital's calling code:+91</td></tr>
+
+            </table>
+        </div>
+    
+
+    </div>
+    
+    <br>
+
+    <div class="overview">
+
+        <div><h2 style="font-size: 30px;">Quick facts</h2></div>
+        <hr>
+        <br>
+        <div style="display: flex;gap: 20px;">
+
+            <div class="smallbox">
+            <b>Official Name</b>
+            <br>
+            Republic of India
+            </div>
+
+             <div class="smallbox">
+            <b>Location</b>
+            <br>
+                India is located in South Asia.
+            </div>
+
+        </div>
+
+        <br>
+
+        <div style="display: flex;gap: 20px;">
+
+            <div class="smallbox">
+            <b>Capital</b>
+            <br>
+            New Delhi is the capital of India.
+            </div>
+
+             <div class="smallbox">
+            <b>Population</b>
+            <br>
+                India is one of the most populous countries in the world.
+            </div>
+
+        </div>
+
+        <br>
+
+        <div style="display: flex;gap: 20px;">
+
+            <div class="smallbox">
+            <b>Languages</b>
+            <br>
+            India has many languages, with Hindi and English widely used for official purposes.
+            </div>
+
+             <div class="smallbox">
+            <b>Government</b>
+            <br>
+                India is the world's largest democratic republic.
+            </div>
+
+        </div>
+
+        <br>
+
+        <div style="display: flex;gap: 20px;">
+
+            <div class="smallbox">
+            <b>Currency</b>
+            <br>
+            The Indian Rupee (Rs.) is the official currency.
+            </div>
+
+             <div class="smallbox">
+            <b>Time Zone</b>
+            <br>
+                India follows Indian Standard Time (IST).
+            </div>
+
+        </div>
+
+        <br>
+
+        <div style="display: flex;gap: 20px;">
+
+            <div class="smallbox">
+            <b>National Symbols</b>
+            <br>
+            National Flag, National Emblem, and National Anthem represent India's identity.
+            </div>
+
+             <div class="smallbox">
+            <b>Geographical Features</b>
+            <br>
+                India has mountains, plains, deserts, rivers, forests, and long coastlines.
+            </div>
+
+        </div>
+       
+
+    </div>
+    
+    <br>
+
+    <div class="overview">
+        
+        <div>
+            <p><h3>In this project, I will present information about four Indian states. Each state represents a unique culture, tradition, food, and lifestyle.
+            This project highlights the diversity and unity of India.</h3></p>
+        </div>
+        
+        <div style="display: flex;gap: 20px;">
+
+            <div>
+                <img class="imgstate" src="./img/rajasthan.jpg">
+                <br>
+                <button class="statebutton"><a style="color: brown;text-decoration: none;" href="./Rajasthan.html">Rajasthan</a></button>
+            </div>
+
+             <div>
+                <img class="imgstate" src="./img/gujarat.jpg">
+                <br>
+                <button class="statebutton"><a style="color: brown;text-decoration: none;" href="./Gujarat.html">Gujarat</a></button>
+            </div>
+
+
+        </div>
+
+        <br>
+
+        <div style="display: flex;gap: 20px;">
+
+            <div>
+                <img class="imgstate" src="./img/maharashta.jpg">
+                <br>
+                <button class="statebutton"><a style="color: brown;text-decoration: none;" href="./Maharashtra.html">Maharashtra</a></button>
+            </div>
+
+             <div>
+                <img class="imgstate" src="./img/Kerala.jpg">
+                <br>
+                <button class="statebutton"><a style="color: brown;text-decoration: none;" href="./Kerala.html">Kerala</a></button>
+            </div>
+
+
+        </div>
+   
+        <br>
+    
+        <p>This website provides information on the history, culture, festivals, tourist attractions, and travel details of selected Indian states.<br>
+        It helps users explore the rich diversity and heritage of each region.</p>
+
+    </div>
+    
+    <br>
+    <br>
+
+
+    <div>
+        
+        <footer style="text-align: center;background-color:rgb(5, 5, 34);color: white;">
+            <p>© 2026 India Tourism Project.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

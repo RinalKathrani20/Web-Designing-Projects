@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    .body{
+        background:linear-gradient(90deg,#b68e7a,#dc9f85,#ffdac0,#ddb188);
+        font-family: "Trebuchet MS", Verdana, sans-serif;
+        line-height: 5vh;
+        animation: gradientmove 6s infinite;
+        background-size: 400% 400%;
+    }
+    .navbar
+    {
+        position: sticky;
+        top: 10px;
+        width:70vw;
+        margin: 0 auto;
+        padding: 10px 12px;
+        background-color: rgba(126, 37, 26, 0.96);
+        border-radius: 14px;
+    }
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navbar li{
+        margin: 0;
+    }
+    .nav{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(255, 249, 243);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: 0.3cm;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .onewhole
+    {
+         background-color:rgb(255, 249, 243);
+        border-radius: 0.5cm;
+        padding: 40px;
+        margin-right:5vw;
+        margin-left: 5vw;   
+    }
+    .inputbox
+    {
+        height: 5vh;
+        width: 50vw;
+        font-size: 17px;
+        margin-left: 200px;
+        border-radius: 0.3cm;
+        border-color:brown;
+        padding: 6px;
+    }
+    .textarea{
+        border-color: #9b3926;
+        border-radius: 0.2cm;
+        width: 60vw;
+        height: 20vh;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .lastbutton
+    {
+        border-radius: 0.6cm;
+        background-color: brown;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        transition: transform 0.3s
+    }
+    .button1
+    {
+        background-color: #9b3926;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 0.4cm;
+    }
+    .nav:hover{
+        background-color: rgb(212, 125, 66);
+    }
+    input:focus{
+        background-color: rgb(223, 207, 197);
+    }
+    .button1:hover{
+        background-color: rgb(212, 125, 66);
+    }
+    .lastbutton:hover{
+          transform: scale(1.05);
+    }
+    @keyframes gradientmove {
+        0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+    }
+     @keyframes gradientmove {
+        0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+    }
+    @media (max-width:634px)
+    {
+         div[style*="display: flex"]{
+            flex-direction: column;
+        }
+    }
+</style>
+<body class="body">
+
+    <div style="background-color:#9b3926;height: 20vh;">
+
+        <div style="text-align: center;">
+            <p style="color: #d18374;font-size: 20px;">Incredible India</p>
+            <h1 style="color: white;font-size: 50px;">Contact And feedback</h1>
+        </div>
+
+    </div>
+
+    <br>
+
+     <nav class="navbar">
+            <ul>
+                <li><button class="button"><a class="nav" href="./Home.html">Home</a></button></li>
+                <li><button class="button"><a class="nav" href="./about.html">About</a></button></li>
+                <li><button class="button"><a class="nav" href="./Gallery.html">Gallery</a></button></li>
+                <li><button class="button"><a class="nav" href="./contact.html">Contact</a></button></li>
+            </ul>
+        </nav>
+
+    <br>
+    <br>
+   
+        <div class="onewhole">
+
+          <h2 style="font-size: 30px;">Contact Form</h2>  
+          <hr>
+
+          <form>
+    
+            <Fieldset style="background-color: white;border-radius: 0.4cm;">
+                
+                <legend style="font-size: 20px;font-weight: bold;color: brown;">Visitor Details</legend>
+
+                <div>
+
+                <div>
+                    <div style="display: flex;">
+                        <label style="width: 100px;" for="name">Name</label>
+                        <input class="inputbox" id="name" name="name" type="text" placeholder="Enter your name" required>
+                    </div>
+                        
+                        <br>
+
+                        <div style="display: flex;">
+                            <label style="width: 100px;" for="email">Email</label>
+                        <input class="inputbox" id="email" name="email" type="email" placeholder="Enter your email" required>
+                        </div>
+
+                        <br>
+                        
+                        <div style="display: flex;">
+                            <label style="width: 100px;" for="phone">Phone</label>
+                        <input class="inputbox" id="phone" name="phone" type="tel" title="Please Enter 10-digit Phone Number" pattern="[0-9]{10}" maxlength="10" placeholder="Enter phone number" required>
+                        </div>
+
+                        <br>
+
+                        <div style="display: flex;">
+                             <label style="width: 100px;" for="age">Age</label>
+                            <input class="inputbox" id="age" name="age" type="number" min="1" max="120" placeholder="Enter your age" required>
+                        </div>
+
+                    </div>
+            
+            </Fieldset>
+    <br>
+    
+    
+            <fieldset style="background-color: white;border-radius: 0.4cm;">
+                <legend style="font-size: 20px;font-weight: bold;color: brown;">Travel Information</legend>
+            
+                
+                    <p>Type of traveller</p>
+                    <div>
+                        <label><input type="radio" name="traveller_type" value="Solo" required> Solo</label>
+                        <label><input type="radio" name="traveller_type" value="Family"> Family</label>
+                        <label><input type="radio" name="traveller_type" value="Friends Group"> Friends Group</label>
+                    </div>
+
+                    <p>What are you interested in?</p>
+                    <div>
+                        <label><input type="checkbox" name="interest" value="History and Monuments"> History and Monuments</label>
+                        <label><input type="checkbox" name="interest" value="Nature and Lakes"> Nature and Lakes</label>
+                        <label><input type="checkbox" name="interest" value="Food and Shopping"> Food and Shopping</label>
+                    </div>
+
+            <br>
+
+            <label>Planned month of visit:</label>
+            <br>
+            <select style=" height: 5vh;width: 50vw;font-size: 17px; border-radius: 0.3cm;border-color:brown;padding: 6px;">
+                    <option selected disabled>Select Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>august</option>
+                    <option>september</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset style="background-color: white;border-radius: 0.4cm;">
+            <legend style="font-size: 20px;font-weight: bold;color: brown;">Your Message</legend>
+            
+            <label for="msg">Message/Questions:</label>
+            <br>
+            <textarea class="textarea" type="text" placeholder="Write your feedback or questions here"></textarea></td>
+            
+            </Fieldset>
+        <br>
+        <button class="lastbutton">Submit Form</button>
+         <button class="lastbutton" style="background-color: rgb(224, 195, 169);color: black;">Reset</button>
+        
+    </form>
+
+        </div>
+
+        <br>
+
+        <div class="onewhole">
+            
+            <h2 style="font-size: 30px;">Location And Contact Details</h2>
+            <hr>
+            <br>
+            <iframe style="width: 82vw;border-radius: 0.4cm;"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30773484.55170563!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1768838171877!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            <br>
+
+            <i><b>Tourist Information Center</b></i>
+        <br>
+        <i>For general tourism-related information, visitors can refer to 
+        official state tourism website 
+        <a class="button1" href="https://www.incredibleindia.gov.in/en">Tourism Portal</a>    
+        </i>
+        <br>
+        <i><b>Note:</b> This is an informational project website.</i>
+
+        </div>
+
+        <br>
+        <br>
+
+        <marquee behavior="alternate" direction="right">
+            <p style="font-size: 20px;">Thank you for visiting this tourist guide Website!</p>
+        </marquee>
+
+        <footer style="text-align: center;background-color:rgb(5, 5, 34);color: white;">
+            © 2026 India Tourism Project
+        </footer>
+
+            
+
+</body>
+</html>

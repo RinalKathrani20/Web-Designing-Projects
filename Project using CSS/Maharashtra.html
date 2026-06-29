@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Page</title>
+</head>
+<style>
+    .body{
+        background:linear-gradient(90deg,#b68e7a,#dc9f85,#ffdac0,#ddb188);
+        font-family: "Trebuchet MS", Verdana, sans-serif;
+        line-height: 5vh;
+        animation: gradientmove 6s infinite;
+        background-size: 400% 400%;
+    }
+    .navbar
+    {
+        position: sticky;
+        top: 10px;
+        width: 70vw;
+        margin: 0 auto;
+        padding: 10px 12px;
+        background-color: rgba(126, 37, 26, 0.96);
+        border-radius: 14px;
+    }
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navbar li{
+        margin: 0;
+    }
+    .nav{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(255, 249, 243);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: 0.3cm;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .onewhole
+    {
+         background-color:rgb(255, 249, 243);
+        border-radius: 0.5cm;
+        padding: 40px;
+        margin-right:5vw ;
+        margin-left: 5vw;
+    }
+    nav{
+        position: sticky;
+        top: 0%;
+        left: 0%;
+    }
+    .nav:hover{
+        background-color: rgb(241, 186, 92);
+        color:  rgb(93, 29, 21);
+    }
+     th,td{
+        padding: 8px;
+    }
+    .climatetable
+    {
+        width: 80vw;
+        border-collapse: collapse;
+    }
+    .climaterow{
+        background-color: white;
+        text-align: center;
+    }
+    .cityover{
+    
+        background-color: rgb(241, 230, 230);
+        border-radius: 0.2cm;
+        width: 60vw;
+        padding: 10px;
+         transition: transform 0.3s
+    }
+    .img{
+        border-top-left-radius: 0.5cm;
+        border-top-right-radius: 0.5cm;
+        width: 26vw;
+        height: 50vh;
+        display: block;
+    }
+    .imgwithtext{
+        background-color: white;
+        width: 26vw;
+       border-bottom-left-radius: 0.5cm;
+       border-bottom-right-radius: 0.5cm;
+       box-sizing: border-box;
+       padding: 10px;
+       
+    }
+    .aboutimage{
+        width: 20vw;
+        height: 350px;
+        border-radius: 0.5cm;
+        transition: transform 0.3s
+    }
+    .travelweb
+    {
+        background-color: brown;
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 0.5cm;
+    }
+    .aboutimage:hover{
+        transform: scale(1.06);   
+    }
+    .smallbox{
+        background-color: white;
+        width: 40vw;
+        box-sizing: border-box;
+         padding: 10px;
+         border: 1px solid brown;
+         border-radius: 0.3cm;
+        transition: transform 0.3s
+    }
+    .travelweb:hover{
+        background-color: rgb(212, 125, 66);
+    }
+    .wholeinfo{
+         transition: transform 0.3s
+    }
+    td:hover{
+        background-color: #eeeded;
+    }
+     .cityover:hover
+    {
+        transform: scale(1.03);
+    }
+    .smallbox:hover{
+          transform: scale(1.04);
+    }
+    .wholeinfo:hover{
+        transform: scale(1.03);
+    }
+    h2:hover{
+        color:brown;
+    }
+    @keyframes gradientmove {
+        0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+    }
+     @keyframes gradientmove {
+        0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+    }
+
+
+    
+    @media (max-width:634px) {
+            
+        .navbar{
+            width: 90%;
+        }
+        .nav{
+            padding: 10px 10px;
+        }
+        .climatetable
+        {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+        .top{
+            width: 100%;
+        }
+        div[style*="display: flex"]{
+            flex-direction: column;
+        }
+        .cityover{
+            width: 100%;
+        }
+        .img{
+            width: 100%;
+        }
+        .imgwithtext{
+            width: 100%;
+        }
+        .aboutimage{
+            width: 100%;
+        }
+        .smallbox{
+            width: 100%;
+        }
+        .img1{
+            width: 100%;
+        }
+        }
+</style>
+<body class="body">
+    <div style="background-color:#9b3926;height: 20vh;">
+
+        <div style="text-align: center;">
+            <p style="color: #d18374;font-size: 20px;">Incredible India</p>
+            <h1 style="color: white;font-size: 50px;">Maharashtra</h1>
+        </div>
+
+    </div>
+    <br>
+
+   <nav class="navbar">
+            <ul>
+                <li><button class="button"><a class="nav" href="./Home.html">Home</a></button></li>
+                <li><button class="button"><a class="nav" href="./about.html">About</a></button></li>
+                <li><button class="button"><a class="nav" href="./Gallery.html">Gallery</a></button></li>
+                <li><button class="button"><a class="nav" href="./contact.html">Contact</a></button></li>
+            </ul>
+    </nav>
+
+    <br>
+    <br>
+
+
+    <br>
+    <div class="onewhole">
+
+        <table style="text-align: center;">
+        <tr>
+            <td><img style="border-radius: 0.5cm;width: 100%;height: auto;" src="./img/Maharashtra11.png"></td>
+        </tr>
+        <tr>
+            <td><h3 style="color: brown;">“Land of Royal Heritage, Forts, and Desert Culture”</h3></td>
+        </tr>
+    </table>
+    
+    </div>
+
+    <br>
+
+    <div class="onewhole">
+        <h2 style="font-size: 30px;">Overview</h2>
+        <hr>
+        <p>Maharashtra is a large state located in western India.
+    It is known for its rich history, diverse culture, and strong economy.
+    The state is home to major cities, historic sites, and beautiful landscapes.</p>
+    </div>
+
+    <br>
+
+    <div class="onewhole">
+     <h2>History And Background</h2>
+     <hr>
+    <p>Maharashtra has a long and influential history that stretches back to ancient times.
+    In early history, the region was ruled by powerful dynasties such as the Satavahanas, who promoted trade, art, and administration.
+    <br>
+    <br>
+    Later, rulers like the Rashtrakutas and Yadavas contributed to the development of temples, forts, and regional culture.
+    The medieval period marked a turning point with the rise of Chhatrapati Shivaji Maharaj, who founded the Maratha Empire and established strong systems of governance, military organization, and administration.
+    The Marathas later expanded their influence across large parts of India and became a dominant political force.
+    <br>
+    <br>
+    During British rule, Maharashtra played a key role in India's freedom struggle and produced many social reformers and national leaders.
+    <br>
+    <br>
+    The state was a center for movements promoting social equality, education, and reform.
+    After India gained independence, Maharashtra was formed as a separate state in 1960.
+    Since then, it has developed into one of India's most industrialized and culturally vibrant states, while preserving its strong historical identity.</p>
+    </div>
+    
+   <br>
+
+    <div class="onewhole">
+        <h2>Culture and Lifestyle</h2>
+        <hr>
+<p>Maharashtra has a rich and vibrant culture shaped by history, geography, and social reform movements.
+The culture reflects a strong sense of pride, courage, and respect for tradition, inspired by leaders like Chhatrapati Shivaji Maharaj.
+People in Maharashtra value simplicity, honesty, and hard work in their daily lives.
+Family bonds are strong, and respect for elders is an important part of society.
+<br>
+<br>
+Traditional festivals such as Ganesh Chaturthi are celebrated with great devotion and enthusiasm, bringing communities together.
+Music, dance, theatre, and folk art forms play an important role in cultural expression.
+Traditional clothing and regional customs are still followed, especially during festivals and ceremonies.
+<br>
+<br>
+The lifestyle of Maharashtra shows a unique balance between tradition and modernity.
+While villages follow traditional ways of living, cities represent modern education, industry, and technology.
+People emphasize education, social equality, and progress, while continuing to respect their cultural roots.
+Overall, the culture and lifestyle of Maharashtra reflect diversity, unity, and a progressive outlook.</p>
+    </div>
+
+    <br>
+
+    <div class="onewhole">
+
+        <h2 style="font-size: 30px;">Climate Information</h2>
+        <hr>
+        <table class="climatetable">
+        <caption>Average Climate of Gujarat</caption>
+        <thead style="background-color: rgb(236, 223, 203);">
+            <tr>
+                <th>Season</th>
+                <th>Months</th>
+                <th>Temperature(Approx.)</th>
+                <th>Tourist Crowd Level</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="climaterow">
+                 <td>Summer</td>
+                <td>March-June</td>
+                <td>25°C to 40°C</td>
+                <td>Fewer</td>
+            </tr>
+            <tr class="climaterow">
+                <td>Monsoon</td>
+                <td>July-September</td>
+                <td>22°C to 30°C</td>
+                <td>Medium</td>
+            </tr>
+            <tr class="climaterow">
+                <td>Winter</td>
+                <td>October-February</td>
+                <td>10°C to 25°C</td>
+                <td>High</td>
+            </tr>
+            </tbody>
+            </table>
+
+        </div>
+
+            <br>
+
+
+            <div class="onewhole">
+
+                <h2>Cities Overview</h2>
+                <hr>
+            <p>Maharashtra has many important cities that play a major role in its culture, economy, and development.
+            These cities represent a mix of modern urban life and rich historical heritage.</p>
+            <h3>Major Cities</h3>
+
+            <div class="cityover">
+
+                <ul>
+                <li><b>Mumbai</b>- The capital city and financial center of India, known for business, culture, and entertainment.</li>
+                <li><b>Pune</b>- A major educational and IT hub with a strong cultural background.</li>
+                <li><b>Nagpur</b>- An important administrative and transport center located in central India.</li>
+                <li><b>Nashik</b>- Known for religious importance, vineyards, and agriculture.</li>
+                <li><b>Aurangabad</b>- Famous for historical monuments and cultural heritage.</li>
+                <li><b>Kolhapur</b>- Known for traditional culture, temples, and handicrafts.</li>
+            </ul>
+
+            </div>
+            
+            </div>
+
+            <br>
+            
+            <div>
+
+
+                <div class="onewhole">
+                
+                <h2 style="font-size: 30px;">Tourist Attraction</h2>
+                <hr>
+                <br>
+                <div style="display: flex;gap: 20px;box-sizing: border-box;">
+
+                    <div class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist7.jpg">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Ajanta & Ellora Caves</h3>
+                            <p>Ancient rock-cut caves famous for paintings, sculptures, and architecture.
+                        They are UNESCO World Heritage Sites and reflect India's artistic heritage.</p>
+                        </div>
+
+                    </div>
+
+                    <div  class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist8.jpg">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Gateway of India</h3>
+                            <p> A historic monument built during the British period.
+                        It is a major landmark and symbol of the state’s history.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div  class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist9.jpg">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Shirdi</h3>
+                            <p>A renowned pilgrimage center associated with Sai Baba.
+                        Devotees from all over the country visit for spiritual peace.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <div style="display: flex;gap: 20px;box-sizing: border-box;">
+
+                    <div  class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist17.webp">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Mahabaleshwar</h3>
+                            <p> A scenic hill station famous for viewpoints and cool climate.</p>
+                        </div>
+
+                    </div>
+
+                    <div  class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist18.jpg">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Elephanta Caves</h3>
+                            <p> Ancient caves with rock-cut temples dedicated to Lord Shiva.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div  class="wholeinfo">
+                        <div>
+                            <img class="img" src="./img/tourist19.jpg">
+                        </div>
+                        
+                        <div  class="imgwithtext">
+                            <h3 style="color: brown;">Alibaug Beaches</h3>
+                            <p>Beautiful coastal spots ideal for relaxation and water activities.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <b>Lonavala–Khandala</b>
+                        <br>
+                        Popular hill stations known for greenery, waterfalls, and pleasant weather.
+                        They are ideal for short trips and nature lovers.
+                    </li>
+
+                    <li>
+                        <b>Tadoba Andhari Tiger Reserve</b>
+                        <br>
+                    A famous wildlife sanctuary known for tiger sightings.
+                    It offers jungle safaris and rich natural beauty.
+                    </li>
+
+                </ul>
+
+                </div>
+
+                <br>
+
+
+
+            </div>
+
+
+             <div class="onewhole">
+                
+                <div>
+                    <h2 style="font-size: 30px;">More about Maharashtra</h2>
+                </div>
+                <hr>
+                <br>
+                
+                <div style="display: flex;gap: 20px;">
+
+                    <div>
+                        <img class="aboutimage" src="./img/moreaboutMAHARASHTRA.jpg">
+                    </div>
+
+                    <div>
+                        <img  class="aboutimage" src="./img/moreaboutMAHARASHTRA1.avif">
+                    </div>
+
+                    <div>
+                        <img  class="aboutimage" src="./img/moreaboutMAHARASHTRA2.jpg">
+                    </div>
+
+                    <div>
+                        <img  class="aboutimage" src="./img/moreaboutMAHARASHTRA3.jpg">
+                    </div>
+
+                </div>
+            <p>
+               Maharashtra has a rich cultural heritage deeply connected to tradition, values, and history.
+People are known for their simple lifestyle, hard work, and respect for family values.
+Festivals play an important role in social life, bringing people together with joy and devotion.
+<br>
+<br>
+Ganesh Chaturthi is the most widely celebrated festival, followed by Gudi Padwa, Diwali, and Makar Sankranti.
+<br>
+Folk arts like Lavani, Tamasha, and Warli painting reflect the creativity and emotions of the people.
+<br>
+The lifestyle of Maharashtra shows a balance between traditional customs and modern living.
+<br>
+<br>
+The Konkan region is known for beautiful beaches and natural beauty.
+It offers peaceful villages, greenery, and coastal culture.Matheran is a peaceful hill station where vehicles are not allowed.
+It is known for clean air, greenery, and scenic viewpoints.
+<br>
+<br>
+Overall, Maharashtra is a state where culture, festivals, art, and values play a major role in everyday life.
+<br>
+Its traditions and lifestyle add depth and identity beyond its tourist attractions, making it a culturally rich and dynamic state.
+            </p>
+            </div>    
+            
+            <br>
+            
+         <div class="onewhole">
+
+                <h2>Travel Information</h2>
+                <hr>
+                <br>
+
+                <div style="display: flex;gap: 20px;">
+                    
+                    <div class="smallbox">
+                        <h3 style="color: brown;">Best Time to Visit</h3>
+                        <p>The best time to visit Maharashtra is October to March.
+                        <br>
+                        The weather is pleasant and suitable for sightseeing and travel.
+                        <br>
+                        Summers are hot, while monsoon brings heavy rainfall in many regions.
+                       </p>
+                    </div>
+
+                    <div class="smallbox">
+                        <h3 style="color: brown;">How to Reach</h3>
+                        <p>Maharashtra is well connected by air, rail, and road.
+                        <br>
+                        Major cities have airports and railway stations with good connectivity.
+                        <br>
+                        State transport buses, taxis, and local transport are easily available.
+                        </p>
+                    </div>
+
+                </div>   
+
+                <br>
+
+                To book train tickets for traveling in Maharashtra, visit the official railway website <a class="travelweb" href="https://www.irctc.co.in/">irctc.co.in</a>
+                <br>
+                To book air tickets for traveling in Maharashtra, visit official airline websites or trusted flight booking platforms.<p>
+                     
+                   
+
+         </div>
+
+         <br>
+                <div style="text-align: center;background-color:rgb(5, 5, 34);color: white;">
+                        <footer>
+                            <p>© 2026 Indian States Tourism Project</p>
+                            <p>Explore the culture, history, and tourism of Maharashtra.</p>
+                        </footer>
+                </div>
+
+            
+</body>
+</html>

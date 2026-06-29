@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<style>
+    .body{
+       background:linear-gradient(90deg,#b68e7a,#dc9f85,#ffdac0,#ddb188);
+        font-family: "Trebuchet MS", Verdana, sans-serif;
+        line-height: 5vh;
+        animation: gradientmove 6s infinite;
+        background-size: 400% 400%;
+    }
+    .navbar
+    {
+        position: sticky;
+        top: 10px;
+        width: 70vw;
+        margin: 0 auto;
+        padding: 10px 12px;
+        background-color: rgba(126, 37, 26, 0.96);
+        border-radius: 14px;
+    }
+    .navbar ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .navbar li{
+        margin: 0;
+    }
+    .nav{
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(255, 249, 243);
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px 22px;
+        border-radius: 0.3cm;
+        transition: background-color 0.2s, color 0.2s;
+    }
+    .button{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+    .onewhole
+    {
+         background-color:rgb(255, 249, 243);
+        border-radius: 0.5cm;
+        padding: 40px;
+        margin-right:5vw ;
+        margin-left: 5vw; 
+    }
+    .img{
+        border-top-left-radius: 0.5cm;
+        border-top-right-radius: 0.5cm;
+        width: 26vw;
+        height: 50vh;
+        display: block;
+        transition: transform 0.3s
+    }
+    .white
+    {
+        background-color: white;
+        width: 26vw;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px;
+        border-bottom-left-radius: 0.5cm;
+        border-bottom-right-radius: 0.5cm;
+    }
+    .whole{
+        transition: transform 0.3s;
+    }
+    .video{
+        height: 60vh;
+        width: 80%;
+        border-radius: 0.5cm;
+        margin-left: 140px;
+    }
+    .whole:hover{
+        transform:scale(1.04)
+    }
+     .nav:hover{
+        background-color: rgb(212, 125, 66);
+    }
+    @keyframes gradientmove {
+        0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+    }
+     @keyframes gradientmove {
+        0% {
+    background-position: 0% 50%;
+  }
+    50% {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+    }
+
+
+     @media (max-width:634px){
+        div[style*="display: flex"]{
+            flex-direction: column;
+        }
+        .img{
+            width: 100%;
+        }
+        .white{
+            width: 100%;
+        }
+        .navbar{
+            width: 90%;
+        }
+        .video{
+           
+        }
+     }
+
+</style>
+<body class="body">
+    <div style="background-color:#9b3926;height: 20vh;">
+
+        <div style="text-align: center;">
+            <p style="color: #d18374;font-size: 20px;">Incredible India</p>
+            <h1 style="color: white;font-size: 50px;">Gallery</h1>
+        </div>
+
+    </div>
+
+    <br>
+
+    
+     <nav class="navbar">
+            <ul>
+                <li><button class="button"><a class="nav" href="./Home.html">Home</a></button></li>
+                <li><button class="button"><a class="nav" href="./about.html">About</a></button></li>
+                <li><button class="button"><a class="nav" href="./Gallery.html">Gallery</a></button></li>
+                <li><button class="button"><a class="nav" href="./contact.html">Contact</a></button></li>
+            </ul>
+        </nav>
+
+    <br>
+    <br>
+
+    <iframe class=video  src="https://www.youtube.com/embed/m8qf5bSmlQQ?si=XOhabJBBZq5MCVLg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+    <p style="font-size: 25px;margin-left: 400px;color: rgb(90, 53, 5);">“Explore the rich history, spirituality, and natural beauty of India.”</p>
+
+
+        <div class="onewhole">
+
+            <h3 style="font-size: 30px;">Historical Places</h3>
+            <hr>
+            <br>
+
+            <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical1.webp">
+                    </div>
+
+                    <div class="white">
+
+                        Taj Mahal
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical2.webp">
+                    </div>
+
+                    <div class="white">
+
+                        Red Fort
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical3.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Qutub Minar
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <br>
+
+
+            <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical4 .jpg">
+                    </div>
+
+                    <div class="white">
+
+                       Jaisalmer Fort
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical5.jpg">
+                    </div>
+
+                    <div class="white">
+
+                       Sanchi stupa
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/historical6.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Humayun's tomb
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <br>
+
+
+            
+
+            <div class="onewhole">
+
+            <h3 style="font-size: 30px;">Religious Places</h3>
+            <hr>
+            <br>
+
+            <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious1.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Somnath Temple
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious2.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Golden Temple
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious3.webp">
+                    </div>
+
+                    <div class="white">
+
+                        Vaishno Devi Temple
+
+                    </div>
+
+                </div>
+
+                </div>
+
+                <br>
+
+                <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious4.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Kedarnath
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious5.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Varanasi Ghats
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/religious6.webp">
+                    </div>
+
+                    <div class="white">
+
+                        Meenakshi Temple
+
+                    </div>
+
+                </div>
+
+                </div>
+
+
+            </div>
+        
+        <br>
+
+
+
+        <div class="onewhole">
+
+            <h3 style="font-size: 30px;">Natural Beauty</h3>
+            <hr>
+            <br>
+
+            <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural1.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Himalayas (Ladakh)
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural2.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Kerala Backwaters (Alleppey)
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural3.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Valley of Flowers (Uttarakhand)
+
+                    </div>
+
+                </div>
+
+                </div>
+
+                <br>
+
+                <div style="display: flex;gap: 20px;">
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural4.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Jog Falls (Karnataka)
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural5jpg.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Dal Lake (Kashmir)
+
+                    </div>
+
+                </div>
+
+
+                <div class="whole">
+
+                    <div>
+                        <img class="img" src="./img/natural6.jpg">
+                    </div>
+
+                    <div class="white">
+
+                        Rann of Kutch (Gujarat)
+
+                    </div>
+
+                </div>
+
+                </div>
+
+
+            </div>
+
+            <br>
+            <br>
+
+<footer style="text-align: center;background-color:rgb(5, 5, 34);color: white;">
+    <p>© 2026 India Tourism Project. All rights reserved.</p>
+</footer>
+    
+</body>
+</html>
